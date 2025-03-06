@@ -8,6 +8,9 @@ const selectMunicipios = document.getElementById("municipios");
 let idProv = null;
 let idMun = null;
 
+// Oculta el select de municipios inicialmente
+selectMunicipios.style.display = "none";
+
 fetch(urlAPI + "home")
   .then((res) => res.json())
   .then((home) => {
@@ -56,7 +59,7 @@ function showProv(provincia) {
 }
 
 selectProvincias.addEventListener("change", (e) => {
-  wait.textContent = "Cargandoooo...";
+  wait.textContent = "Cargando...";
   // Obtengo el id de la opción seleccionada usando selectedIndex
   idProv = e.target.value;
   fetch(urlAPI + "provincias/" + idProv)
@@ -73,6 +76,8 @@ selectProvincias.addEventListener("change", (e) => {
     .then((res) => res.json())
     .then((mun) => {
       showMun(mun);
+      // Muestra el select de municipios cuando se selecciona una provincia
+      selectMunicipios.style.display = "block";
     })
     .catch((error) => {
       console.error("Error al obtener la lista de municipios:", error);
