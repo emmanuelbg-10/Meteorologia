@@ -1,0 +1,100 @@
+/* Reset de estilos básicos */
+body, h1, h2, p, select, button, article {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Estilo general de la página */
+body {
+  background-color: #f0f4f8; /* Gris claro */
+  color: #414155;
+  line-height: 1.7;
+  padding: 0 20px;
+}
+
+/* Encabezado */
+h1 {
+  color: #004a8d; /* Azul oscuro */
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2.5em;
+}
+
+/* Sección principal */
+main {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+/* Estilo de los selectores */
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  background: rgba(39, 82, 128, .07);
+}
+
+/* Estilo de los encabezados y párrafos */
+h2 {
+  color: #002f5f; /* Azul más oscuro */
+  margin: 25px 0 15px;
+  font-size: 2em;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+/* Estilo de los artículos */
+article {
+  background: rgba(39, 82, 128, .07);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #c1d8e4;
+  margin-bottom: 20px;
+}
+
+/* Estilo de los elementos de espera */
+#wait {
+  color: #007bb5; /* Azul intermedio */
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+/* Cabecera secundaria */
+#cabecera2 {
+  color: #004a8d; /* Azul oscuro */
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Estilo de los textos en previsiones */
+#text1, #text2 {
+  padding: 15px;
+  border: 1px solid #c1d8e4;
+  border-radius: 8px;
+  background-color: #f0f4f8; /* Gris claro */
+  line-height: 1.5;
+}
+
+/* Estilo de los elementos de la lista */
+option {
+  padding: 10px;
+  font-size: 1em;
+}
+
+
