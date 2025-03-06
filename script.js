@@ -125,9 +125,8 @@ function showInfoMun(infoMun) {
 
   p1.innerHTML =
     infoMun.stateSky.description +
-    " " +
-    infoMun.temperatura_actual +
-    "ºC (max: " +
+    (infoMun.temperatura_actual ? " " + infoMun.temperatura_actual + "ºC" : "") +
+    " (max: " +
     infoMun.temperaturas.max +
     "ºC | min: " +
     infoMun.temperaturas.min +
